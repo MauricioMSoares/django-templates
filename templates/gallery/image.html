@@ -1,54 +1,26 @@
 {% extends 'gallery/base.html' %}
 {% load static %}
 {% block content %}
-    <div class="pagina-inicial">
-        <header class="cabecalho">
-            <img src="{% static '/assets/logo/Logo(2).png' %}" alt="Alura Space's logo" />
-            <div class="cabecalho__busca">
-                <div class="busca__fundo">
-                    <input class="busca__input" type="text" placeholder="What are you seeking for?">
-                    <img class="busca__icone" src="{% static '/assets/ícones/1x/search.png' %}" alt="Search icon">
-                </div>
-            </div>
-        </header>
-        <main class="principal">
-            <section class="menu-lateral">
-                <nav class="menu-lateral__navegacao">
-                    <a href="{% url 'index' %}"><img src="{% static '/assets/ícones/1x/Home - ativo.png' %}"> Home</a>
-                    <a href="#"><img src="{% static '/assets/ícones/1x/Mais vistas - inativo.png' %}"> More views</a>
-                    <a href="#"><img src="{% static '/assets/ícones/1x/Novas - inativo.png' %}"> New</a>
-                    <a href="#"><img src="{% static '/assets/ícones/1x/Surpreenda-me - inativo.png' %}"> Surprise me</a>
-                </nav>
-            </section>
-            <section class="conteudo">
-                <section class="imagem">
-                    <div class="imagem__conteudo">
-                        <img class="imagem__imagem" src="{% static '/assets/imagens/galeria/carina-nebula.png' %}">
-                        <div class="imagem__info">
-                            <div class="imagem__texto">
-                                <p class="imagem__titulo">“Cosmic Cliffs” in the Carina Nebula</p>
-                                <p class="imagem__descricao">July 12th, 2022</p>
-                                <p class="imagem__texto">What looks a lot like rugged mountains in a night
-                                    moonlit is actually the edge of a young, nearby star-forming region
-                                    NGC 3324 in the Carina Nebula. Captured in infrared light by Near-Infrared
-                                    Camera (NIRCam) on NASA's James Webb Space Telescope, this image reveals
-                                    previously obscured areas of star birth.</p>
-                            </div>
+<div class="pagina-inicial">
+    <main class="principal">
+        <section class="conteudo">
+            <section class="imagem">
+                <div class="imagem__conteudo">
+                    <img class="imagem__imagem" src="{% static '/assets/imagens/galeria/carina-nebula.png' %}">
+                    <div class="imagem__info">
+                        <div class="imagem__texto">
+                            <p class="imagem__titulo">“Cosmic Cliffs” in the Carina Nebula</p>
+                            <p class="imagem__descricao">July 12th, 2022</p>
+                            <p class="imagem__texto">What looks a lot like rugged mountains in a night
+                                moonlit is actually the edge of a young, nearby star-forming region
+                                NGC 3324 in the Carina Nebula. Captured in infrared light by Near-Infrared
+                                Camera (NIRCam) on NASA's James Webb Space Telescope, this image reveals
+                                previously obscured areas of star birth.</p>
                         </div>
                     </div>
-                </section>
+                </div>
             </section>
-        </main>
-    </div>
-    <footer class="rodape">
-        <div class="rodape__icones">
-            <a href="https://twitter.com/AluraOnline" target=”_blank”>
-                <img src="{% static '/assets/ícones/1x/twitter.png' %}" alt="twitter icon">
-            </a>
-            <a href="https://www.instagram.com/aluraonline/" target=”_blank”>
-                <img src="{% static '/assets/ícones/1x/instagram.png' %}" alt="instagram icon">
-            </a>
-        </div>
-        <p class="rodape__texto">Developed by Alura</p>
-    </footer>
+        </section>
+    </main>
+</div>
 {% endblock %}
